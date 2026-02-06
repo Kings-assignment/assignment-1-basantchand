@@ -7,17 +7,20 @@
 int main()
 {
     int num;
+    int root;
 
     printf("Enter a number: ");
     scanf("%d", &num);
 
-    if (sqrt(num) == (int)sqrt(num))
+       root = (int)sqrt(num);
+
+    if (num >= 0 && (root * root) == num)
     {
-        printf("The number is a perfect square.\n");
+        printf("%d is a perfect square\n", num);
     }
     else
     {
-        printf("The number is not a perfect square.\n");
+        printf("%d is NOT a perfect square\n", num);
     }
 
     return 0;
