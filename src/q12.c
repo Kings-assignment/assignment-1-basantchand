@@ -2,26 +2,26 @@
 
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int a, b, c;
 
-    printf("Enter value of a: ");
+    // Taking input from the user
+    printf("Enter value for a: ");
     scanf("%d", &a);
 
-    printf("Enter value of b: ");
+    printf("Enter value for b: ");
     scanf("%d", &b);
 
-    printf("Enter value of c: ");
+    printf("Enter value for c: ");
     scanf("%d", &c);
 
-    if (a > b && c != 0)
-    {
-        printf("Condition is true.\n");
-    }
-    else
-    {
-        printf("Condition is false.\n");
+    // The Logic: Checks if a is greater than b AND c is not equal to 0
+    if (a > b && c != 0) {
+        printf("True\n");
+    } 
+    else {  
+        // Fixed: It is 'else', not 'else5'
+        printf("False\n");
     }
 
     return 0;
