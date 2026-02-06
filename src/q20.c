@@ -4,18 +4,18 @@
 
 int main()
 {
-    int number;
+    int num;
 
-    std::cout << "Enter a number: ";
-    std::cin >> number;
+    printf("Enter a number: ");
+    scanf("%d", &num);
 
-    if (number % 3 == 0 || number % 5 == 0)
+    if (num % 3 == 0 || num % 5 == 0)
     {
-        std::cout << number << " is a multiple of 3 or 5." << std::endl;
+        printf("The number is a multiple of 3 or 5.\n");
     }
     else
     {
-        std::cout << number << " is NOT a multiple of 3 or 5." << std::endl;
+        printf("The number is not a multiple of 3 or 5.\n");
     }
 
     return 0;
